@@ -1,9 +1,9 @@
-import './app.css';
+import AppLayout from './components/app-layout/app-layout';
 
 const App = () => {
   return (
     <>
-      <h1>Vite + React</h1>
+      <AppLayout />
     </>
   );
 };
