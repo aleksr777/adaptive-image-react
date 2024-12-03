@@ -1,9 +1,38 @@
 .wrapper {
-  border: #ff0303 1px solid;
+  border: #1cff03 1px solid;
   box-sizing: border-box;
+  position: relative;
   padding: 15px;
   margin: 0;
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.frame {
+  outline: #ff034f 1px solid;
+  width: 90%;
+  height: 90%;
+}
+
+.round {
+  outline: #03eeff 1px solid;
+}
+.square {
+  outline: #03eeff 1px solid;
+}
+.narrow {
+  outline: #03eeff 1px solid;
+}
+.middle {
+  outline: #03eeff 1px solid;
+}
+.small {
+  outline: #03eeff 1px solid;
+}
+.big {
+  outline: #03eeff 1px solid;
 }
