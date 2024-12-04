@@ -6,73 +6,55 @@ const AppLayout = () => {
     <div className={styles.wrapper}>
       <div className={styles.frame}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.smallSquare}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
-          altText="Кот."
-        />
-      </div>
-      <div className={styles.frame}>
-        <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.middleSquare}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.round}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.narrow}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.wide}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.smallRound}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.veryNarrow}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>
-      <div className={styles.frame}>
+      <div className={`${styles.frame} ${styles.veryWide}`}>
         <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
-          altText="Пейзаж."
-        />
-      </div>
-      <div className={styles.frame}>
-        <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
-          altText="Пейзаж."
-        />
-      </div>
-      <div className={styles.frame}>
-        <PictureAdaptable
-          path="https://avatars.mds.yandex.net/i?id=2ea9ce05355031acb4a138563a4f97f6_l-4524739-images-thumbs&n=13"
+          path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
           altText="Пейзаж."
         />
       </div>

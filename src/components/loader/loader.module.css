@@ -51,6 +51,6 @@
   border-top: 10px solid var(--indicator-color);
   animation:
     spin 2s linear infinite,
-    fadeIn 2s ease forwards;
+    fadeIn 1s ease forwards;
   transform: translate(-50%, -50%);
 }

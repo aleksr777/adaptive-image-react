@@ -1,38 +1,62 @@
 .wrapper {
-  border: #1cff03 1px solid;
   box-sizing: border-box;
   position: relative;
   padding: 15px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 2000px;
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content min-content;
+  align-items: center;
+  justify-items: center;
 }
 
 .frame {
-  outline: #ff034f 1px solid;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   width: 90%;
   height: 90%;
 }
 
+.middleSquare {
+  width: 70%;
+  height: 70%;
+}
+
+.smallSquare {
+  width: 30%;
+  height: 30%;
+}
+
 .round {
-  outline: #03eeff 1px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 85%;
 }
-.square {
-  outline: #03eeff 1px solid;
+
+.wide {
+  height: 40%;
 }
+
 .narrow {
-  outline: #03eeff 1px solid;
+  width: 40%;
 }
-.middle {
-  outline: #03eeff 1px solid;
+
+.smallRound {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 37%;
+  height: 40%;
 }
-.small {
-  outline: #03eeff 1px solid;
+
+.veryWide {
+  height: 15%;
 }
-.big {
-  outline: #03eeff 1px solid;
+
+.veryNarrow {
+  width: 15%;
 }
