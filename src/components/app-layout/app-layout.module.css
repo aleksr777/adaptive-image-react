@@ -1,0 +1,62 @@
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 2000px;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: min-content min-content min-content min-content;
+  align-items: center;
+  justify-items: center;
+}
+
+.frame {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.middleSquare {
+  width: 70%;
+  height: 70%;
+}
+
+.smallSquare {
+  width: 30%;
+  height: 30%;
+}
+
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 85%;
+}
+
+.wide {
+  height: 40%;
+}
+
+.narrow {
+  width: 40%;
+}
+
+.smallRound {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 37%;
+  height: 40%;
+}
+
+.veryWide {
+  height: 15%;
+}
+
+.veryNarrow {
+  width: 15%;
+}
