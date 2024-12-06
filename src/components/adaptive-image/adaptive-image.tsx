@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import styles from './picture-adaptable.module.css';
+import styles from './adaptive-image.module.css';
 import Loader from '../loader/loader';
 
-interface PictureAdaptableProps {
+interface AdaptiveImageProps {
   path: string;
   altText?: string;
   isDraggable?: boolean;
@@ -11,7 +11,7 @@ interface PictureAdaptableProps {
 
 type TimerId = ReturnType<typeof setTimeout>;
 
-const PictureAdaptable: React.FC<PictureAdaptableProps> = ({
+const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
   path,
   altText,
   isDraggable = false,
@@ -107,4 +107,4 @@ const PictureAdaptable: React.FC<PictureAdaptableProps> = ({
   );
 };
 
-export default PictureAdaptable;
+export default AdaptiveImage;
