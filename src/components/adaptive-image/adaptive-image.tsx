@@ -7,6 +7,7 @@ interface AdaptiveImageProps {
   altText?: string;
   isDraggable?: boolean;
   loaderColor?: string;
+  disableLoader?: boolean;
 }
 
 type TimerId = ReturnType<typeof setTimeout>;
@@ -16,7 +17,11 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
   altText,
   isDraggable = false,
   loaderColor = '',
+  disableLoader = false,
 }) => {
+  const MIN_WIDTH_FOR_LOADER = 100;
+  const MIN_HEIGHT_FOR_LOADER = 100;
+
   const alt = altText && typeof altText === 'string' ? altText : '';
   const src = path && typeof path === 'string' ? path : '';
   const color = loaderColor && typeof loaderColor === 'string' ? loaderColor : '';
@@ -27,6 +32,7 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
     width: 0,
     height: 0,
   });
+  const [isTooSmall, setIsTooSmall] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   const debounce = (func: (...args: any[]) => void, wait: number) => {
@@ -39,27 +45,26 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
 
   const updateSize = useCallback(
     debounce(() => {
-      if (wrapperRef.current) {
-        setWrapperSize({
-          width: wrapperRef.current.offsetWidth,
-          height: wrapperRef.current.offsetHeight,
-        });
-      }
+      if (!wrapperRef.current || disableLoader) return;
+      const width = wrapperRef.current.offsetWidth;
+      const height = wrapperRef.current.offsetHeight;
+      setWrapperSize({ width, height });
+      setIsTooSmall(width < MIN_WIDTH_FOR_LOADER || height < MIN_HEIGHT_FOR_LOADER);
     }, 200),
-    [],
+    [disableLoader],
   );
 
   useEffect(() => {
-    if (isLoading) {
+    if (isLoading && !disableLoader) {
       updateSize();
       window.addEventListener('resize', updateSize);
       return () => {
         window.removeEventListener('resize', updateSize);
       };
     }
-  }, [isLoading, updateSize]);
+  }, [isLoading, updateSize, disableLoader]);
 
-  const loaderSize = isLoading
+  const loaderSize = !disableLoader && isLoading
     ? Math.round(Math.min(wrapperSize.width, wrapperSize.height) / 3)
     : 0;
 
@@ -92,7 +97,7 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
 
   return (
     <div className={wrapperStyle} ref={wrapperRef}>
-      {isLoading && <Loader size={loaderSize} color={color} />}
+      {!disableLoader && isLoading && !isTooSmall && <Loader size={loaderSize} color={color} />}
       <picture className={pictureStyle}>
         <img
           className={imgStyle}
