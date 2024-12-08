@@ -84,12 +84,24 @@ h1 {
   height: 63%;
 }
 
-@media screen and (max-width: 3072px) {
+@media screen and (max-width: 3440px) {
   .frames {
-    padding: 170px 170px 0 170px;
+    padding: 180px 180px 0 180px;
   }
   .header {
-    height: 290px;
+    height: 280px;
+  }
+  h1 {
+    font-size: 115px;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .frames {
+    padding: 160px 160px 0 160px;
+  }
+  .header {
+    height: 260px;
   }
   h1 {
     font-size: 110px;
@@ -98,37 +110,49 @@ h1 {
 
 @media screen and (max-width: 2048px) {
   .frames {
-    padding: 150px 150px 0 150px;
+    padding: 140px 140px 0 140px;
   }
   .header {
-    height: 280px;
+    height: 240px;
   }
   h1 {
-    font-size: 94px;
+    font-size: 105px;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
+  .frames {
+    padding: 130px 130px 0 130px;
+  }
+  .header {
+    height: 220px;
+  }
+  h1 {
+    font-size: 95px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
   .frames {
     padding: 120px 120px 0 120px;
   }
   .header {
-    height: 270px;
+    height: 210px;
   }
   h1 {
     font-size: 85px;
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1366px) {
   .frames {
     padding: 110px 110px 0 110px;
   }
   .header {
-    height: 230px;
+    height: 200px;
   }
   h1 {
-    font-size: 80px;
+    font-size: 75px;
   }
 }
 
@@ -137,10 +161,10 @@ h1 {
     padding: 100px 100px 0 100px;
   }
   .header {
-    height: 210px;
+    height: 190px;
   }
   h1 {
-    font-size: 72px;
+    font-size: 65px;
   }
 }
 
@@ -149,7 +173,7 @@ h1 {
     padding: 90px 90px 0 90px;
   }
   .header {
-    height: 200px;
+    height: 180px;
   }
   h1 {
     font-size: 60px;
@@ -161,19 +185,19 @@ h1 {
     padding: 80px 80px 0 80px;
   }
   .header {
-    height: 160px;
+    height: 170px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 55px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .frames {
-    padding: 60px 60px 0 60px;
+    padding: 70px 70px 0 70px;
   }
   .header {
-    height: 125px;
+    height: 130px;
   }
   h1 {
     font-size: 45px;
@@ -182,7 +206,7 @@ h1 {
 
 @media screen and (max-width: 700px) {
   .frames {
-    padding: 40px 40px 0 40px;
+    padding: 60px 60px 0 60px;
   }
   .header {
     height: 110px;
@@ -194,7 +218,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .frames {
-    padding: 20px 20px 0 20px;
+    padding: 50px 50px 0 50px;
   }
   .header {
     height: 100px;
@@ -206,7 +230,7 @@ h1 {
 
 @media screen and (max-width: 540px) {
   .frames {
-    padding: 10px 10px 0 10px;
+    padding: 40px 40px 0 40px;
   }
   .header {
     height: 90px;
@@ -217,15 +241,21 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  .frames {
+    padding: 30px 30px 0 30px;
+  }
   .header {
     height: 80px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .frames {
+    padding: 15px 15px 0 15px;
+  }
   .header {
     height: 70px;
   }
@@ -235,6 +265,9 @@ h1 {
 }
 
 @media screen and (max-width: 360px) {
+  .frames {
+    padding: 5px 5px 0 5px;
+  }
   .header {
     height: 55px;
   }
@@ -244,9 +277,6 @@ h1 {
 }
 
 @media screen and (max-width: 320px) {
-  .frames {
-    padding: 5px 5px 0 5px;
-  }
   .header {
     height: 45px;
   }
