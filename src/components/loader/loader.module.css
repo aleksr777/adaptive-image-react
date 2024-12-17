@@ -46,8 +46,8 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 10px solid var(--base-color);
-  border-top: 10px solid var(--indicator-color);
+  border: 0 solid transparent;
+  border-top: 0 solid transparent;
   animation:
     spin 2s linear infinite,
     fadeIn 1s ease forwards;
