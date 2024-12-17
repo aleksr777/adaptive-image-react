@@ -12,7 +12,7 @@ const AppLayout = () => {
             disableLoader={true}
           />
         </div>
-        <h1>Adaptive image component</h1>
+        <h1 className={styles.title}>Adaptive image component</h1>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.frames}>
@@ -20,6 +20,8 @@ const AppLayout = () => {
             <AdaptiveImage
               path="https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?t=st=1733334487~exp=1733338087~hmac=f11dfeed756f875bc7a4ed23056f4765765d9f1fca1a3a09e98ced5db224d4e8&w=996"
               altText="Пейзаж."
+              isDraggable={true}
+              loaderColor="#0d00ffa9"
             />
           </div>
           <div className={`${styles.frame} ${styles.narrow}`}>

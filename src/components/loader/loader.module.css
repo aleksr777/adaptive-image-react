@@ -1,3 +1,14 @@
+.wrapper,
+.loader {
+  box-sizing: border-box;
+  background-color: transparent;
+  display: block;
+  outline: none;
+  pointer-events: none;
+  user-select: none;
+  padding: 0;
+}
+
 .wrapper {
   position: absolute;
   top: 0;
@@ -5,14 +16,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  padding: 0;
   width: fit-content;
   height: fit-content;
-  display: block;
-  outline: none;
-  pointer-events: none;
-  user-select: none;
-  background-color: transparent;
 }
 
 @keyframes spin {
@@ -40,10 +45,9 @@
   position: relative;
   width: 30px;
   height: 30px;
-  background: transparent;
   border-radius: 50%;
-  border: 10px solid var(--base-color);
-  border-top: 10px solid var(--indicator-color);
+  border: 0 solid transparent;
+  border-top: 0 solid transparent;
   animation:
     spin 2s linear infinite,
     fadeIn 1s ease forwards;
