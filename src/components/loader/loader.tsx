@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './loader.module.css';
 
 interface LoaderProps {
@@ -6,14 +5,13 @@ interface LoaderProps {
   size?: number;
 }
 
-const Loader: React.FC<LoaderProps> = ({ color, size }) => {
+const Loader = ({ color, size }: LoaderProps) => {
   if (!size) {
     return null;
   }
 
-  const rootStyle = getComputedStyle(document.documentElement);
-  const defaultBaseColor = rootStyle.getPropertyValue('--base-color').trim();
-  const defaultIndicatorColor = rootStyle.getPropertyValue('--indicator-color').trim();
+  const defaultBaseColor = 'hsla(0, 0%, 50%, 0.4)';
+  const defaultIndicatorColor = 'hsla(0, 0%, 50%, 0.8)';
 
   const borderSize = Math.round(size / 10);
 
@@ -26,7 +24,7 @@ const Loader: React.FC<LoaderProps> = ({ color, size }) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.loader} style={stylesObj}></div>
+      <div className={styles.loader} style={stylesObj} />
     </div>
   );
 };

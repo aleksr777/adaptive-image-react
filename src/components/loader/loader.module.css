@@ -1,8 +1,3 @@
-:root {
-  --base-color: hsla(0, 0%, 50%, 0.4);
-  --indicator-color: hsla(0, 0%, 50%, 0.8);
-}
-
 .wrapper {
   position: absolute;
   top: 0;
