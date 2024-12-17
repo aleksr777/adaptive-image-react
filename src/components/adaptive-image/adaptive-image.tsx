@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import styles from './adaptive-image.module.css';
 import Loader from '../loader/loader';
 
@@ -12,13 +12,13 @@ interface AdaptiveImageProps {
 
 type TimerId = ReturnType<typeof setTimeout>;
 
-const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
+const AdaptiveImage = ({
   path,
   altText,
   isDraggable = false,
   loaderColor = '',
   disableLoader = false,
-}) => {
+}: AdaptiveImageProps) => {
   const MIN_WIDTH_FOR_LOADER = 100;
   const MIN_HEIGHT_FOR_LOADER = 100;
 
@@ -35,11 +35,11 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
   const [isTooSmall, setIsTooSmall] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
-  const debounce = (func: (...args: any[]) => void, wait: number) => {
+  const debounce = (func: () => void, wait: number) => {
     let timeout: TimerId;
-    return (...args: any[]) => {
+    return () => {
       clearTimeout(timeout);
-      timeout = setTimeout(() => func(...args), wait);
+      timeout = setTimeout(() => func(), wait);
     };
   };
 
@@ -64,9 +64,10 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
     }
   }, [isLoading, updateSize, disableLoader]);
 
-  const loaderSize = !disableLoader && isLoading
-    ? Math.round(Math.min(wrapperSize.width, wrapperSize.height) / 3)
-    : 0;
+  const loaderSize =
+    !disableLoader && isLoading
+      ? Math.round(Math.min(wrapperSize.width, wrapperSize.height) / 3)
+      : 0;
 
   const handleLoad = () => {
     setIsLoading(false);
@@ -83,7 +84,7 @@ const AdaptiveImage: React.FC<AdaptiveImageProps> = ({
   }, [path, altText]);
 
   let wrapperStyle = styles.wrapper;
-  let pictureStyle = styles.picture;
+  const pictureStyle = styles.picture;
   let imgStyle = styles.picture__img;
 
   if (isLoading) {
