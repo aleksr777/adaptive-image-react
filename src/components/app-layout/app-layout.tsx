@@ -12,7 +12,7 @@ const AppLayout = () => {
             disableLoader={true}
           />
         </div>
-        <h1>Adaptive image component</h1>
+        <h1 className={styles.title}>Adaptive image component</h1>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.frames}>
