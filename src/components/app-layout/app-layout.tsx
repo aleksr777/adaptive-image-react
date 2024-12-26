@@ -5,7 +5,7 @@ const AppLayout = () => {
   return (
     <>
       <div className={styles.header}>
-        <div className={`${styles.frame} ${styles.cover}`}>
+        <div className={`${styles.frame} ${styles.frame_cover}`}>
           <AdaptiveImage
             path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
             altText="Пейзаж."
@@ -24,36 +24,42 @@ const AppLayout = () => {
               loaderColor="#0d00ffa9"
             />
           </div>
-          <div className={`${styles.frame} ${styles.narrow}`}>
+          <div className={`${styles.frame} ${styles.frame_narrow}`}>
             <AdaptiveImage
               path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
               altText="Пейзаж."
             />
           </div>
-          <div className={`${styles.frame} ${styles.round}`}>
+          <div className={`${styles.frame} ${styles.frame_round}`}>
             <AdaptiveImage
               path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
               altText="Пейзаж."
             />
           </div>
-          <div className={`${styles.frame} ${styles.wide}`}>
+          <div className={`${styles.frame} ${styles.frame_wide}`}>
             <AdaptiveImage
               path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
               altText="Пейзаж."
             />
           </div>
-          <div className={`${styles.frame} ${styles.smallSquare}`}>
+          <div className={`${styles.frame} ${styles.frame_smallSquare}`}>
             <AdaptiveImage
               path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
               altText="Пейзаж."
             />
           </div>
-          <div className={`${styles.frame} ${styles.smallRound}`}>
+          <div className={`${styles.frame} ${styles.frame_smallRound}`}>
             <AdaptiveImage
               path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
               altText="Пейзаж."
             />
           </div>
+        </div>
+        <div className={`${styles.frame} ${styles.frame_big}`}>
+          <AdaptiveImage
+            path="https://img2.akspic.ru/crops/6/5/2/9/7/179256/179256-zimnee_siyanie-avrora-svalbard-zima-atmosfera-3840x2160.jpg"
+            altText="Пейзаж."
+          />
         </div>
       </div>
     </>
