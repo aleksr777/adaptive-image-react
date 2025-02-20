@@ -43,6 +43,7 @@
 
 .loader {
   position: relative;
+  z-index: 1;
   width: 30px;
   height: 30px;
   border-radius: 50%;
